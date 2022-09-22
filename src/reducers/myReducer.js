@@ -1,14 +1,4 @@
-import { configureStore } from '@reduxjs/toolkit';
-
-
-const ADD = 'ADD';
-
-const addMessage = (message) => {
-  return {
-    type: ADD,
-    message: message
-  }
-};
+import { ADD } from "../actionTypes/actionTypes";
 
 const messageReducer = (state = [], action) => {
   switch (action.type) {
@@ -22,7 +12,4 @@ const messageReducer = (state = [], action) => {
   }
 };
 
-
 export default messageReducer;
-
-
